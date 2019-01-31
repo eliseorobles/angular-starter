@@ -19,6 +19,7 @@ export class AppComponent {
         ngxuxMatToolbarService.menuItems = [
 
             new NgxuxMatToolbarItem({ icon: 'home', path: '/home', tooltip: 'Go home!', color: '#fff', hoverColor: 'red' }),
+            new NgxuxMatToolbarItem({ icon: 'building', path: '/test', tooltip: 'Go asdfasdf!', color: '#fff', hoverColor: 'red' }),
             new NgxuxMatToolbarItem({ icon: 'settings', path: '/settings', tooltip: 'Go settings!' }),
 
         ];
@@ -26,6 +27,7 @@ export class AppComponent {
         ngxuxMatVerticalToolbarService.leftMenuItems = [
 
             new NgxuxMatVerticalToolbarItem({ icon: 'home', path: '/home', tooltip: 'Go home!' }),
+            new NgxuxMatVerticalToolbarItem({ icon: 'code', path: '/awesome', tooltip: 'Go AWESOME BRO!' }),
             new NgxuxMatVerticalToolbarItem({ icon: 'settings', path: '/settings', tooltip: 'Go settings!' }),
 
         ];

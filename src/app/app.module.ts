@@ -13,11 +13,13 @@ import { HomeModule }                          from './home/home.module';
 import { LoginModule }                         from './login/login.module';
 import { SettingsModule }                      from './settings/settings.module';
 import { SharedModule }                        from './shared/shared.module';
+import { AwesomeComponent } from './awesome/awesome.component';
+import {AwesomeModule} from './awesome/awesome.module';
 
 @NgModule({
     declarations: [
 
-        AppComponent
+        AppComponent,
 
     ],
 
@@ -28,6 +30,7 @@ import { SharedModule }                        from './shared/shared.module';
         HttpClientModule,
         RouterModule.forRoot([]),
 
+        AwesomeModule,
         HomeModule,
         LoginModule,
         SettingsModule,
