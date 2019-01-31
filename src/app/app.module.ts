@@ -13,8 +13,8 @@ import { HomeModule }                          from './home/home.module';
 import { LoginModule }                         from './login/login.module';
 import { SettingsModule }                      from './settings/settings.module';
 import { SharedModule }                        from './shared/shared.module';
-import { AwesomeComponent } from './awesome/awesome.component';
-import {AwesomeModule} from './awesome/awesome.module';
+import {CalendarModule} from './calendar/calendar.module';
+
 
 @NgModule({
     declarations: [
@@ -30,8 +30,8 @@ import {AwesomeModule} from './awesome/awesome.module';
         HttpClientModule,
         RouterModule.forRoot([]),
 
-        AwesomeModule,
         HomeModule,
+        CalendarModule,
         LoginModule,
         SettingsModule,
         SharedModule,
