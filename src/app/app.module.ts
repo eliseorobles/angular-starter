@@ -14,6 +14,7 @@ import { LoginModule }                         from './login/login.module';
 import { SettingsModule }                      from './settings/settings.module';
 import { SharedModule }                        from './shared/shared.module';
 import {CalendarModule} from './calendar/calendar.module';
+import {FullCalendarModule} from 'ng-fullcalendar';
 
 
 @NgModule({
