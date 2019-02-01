@@ -3,6 +3,7 @@ import {Options} from 'fullcalendar';
 import {CalendarService} from './calendar.service';
 import {CalendarEvent} from '../_lib/CalendarEvent';
 import {CalendarComponent} from 'ng-fullcalendar';
+import {Pageable} from '@ngxux/common';
 
 @Component({
     selector: 'app-calendar',
@@ -21,9 +22,7 @@ export class EventsCalendarComponent implements OnInit {
 
     public ngOnInit() {
 
-        this.calendarService.getEvents().subscribe((result: Array<CalendarEvent>) => {
-
-            console.log(result);
+        this.calendarService.getEvents().subscribe((pageable: Pageable<CalendarEvent>) => {
 
             this.calendarOptions = {
 
@@ -37,12 +36,11 @@ export class EventsCalendarComponent implements OnInit {
 
                 },
 
-                events: result
+                events: pageable.content
 
             };
 
         });
-
 
     }
 
